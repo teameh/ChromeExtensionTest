@@ -281,7 +281,7 @@ module.exports = function (grunt) {
         options: {
           archive: function() {
             var manifest = grunt.file.readJSON('app/manifest.json');
-            return 'package/test_chrome_extension-' + manifest.version + '.zip';
+            return 'package/test_chrome_extension.zip';
           }
         },
         files: [{
