@@ -28,11 +28,9 @@ this.addSite = function(site, pw){
                 iconUrl: 'icon-38.png'
             }
 
-            chrome.notifications.create("test", options);
-
-            // show!
-            notification.show();
-
+            if(typeof chrome.notifications != "undefined"){
+                chrome.notifications.create("test", options);
+            }
         });
     }
 }
