@@ -2,6 +2,6 @@
 Testing out the options..
 
 
-- [ ] Test password field readability
-- [ ] Test sharing plugindata with other sessions
-- [ ] Test notifications
+- [x] Test password field readability
+- [x] Test sharing plugindata with other sessions
+- [x] Test notifications

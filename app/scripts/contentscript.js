@@ -20,6 +20,19 @@ this.addSite = function(site, pw){
         chrome.storage.sync.set({'SiteList': this.siteList}, function() {
             // Notify that we saved.
             console.log('List of sites was saved');
+
+            var options = {
+                type: "basic",
+                title: 'Yes!',
+                message: 'Another site stored the database',
+                iconUrl: 'icon-38.png'
+            }
+
+            chrome.notifications.create("test", options);
+
+            // show!
+            notification.show();
+
         });
     }
 }
